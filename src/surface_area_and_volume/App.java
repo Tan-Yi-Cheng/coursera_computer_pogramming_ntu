@@ -1,5 +1,10 @@
 import java.util.Scanner;
+
+
 public class App{
+
+    private static double surface;
+    private static double volumn;
 
     public static void main(String[]arg){
         Scanner input = new Scanner(System.in);
@@ -11,10 +16,10 @@ public class App{
         System.out.print("length= ");
         d = input.nextDouble();
 
-        double surface, volumn;
-        volumn = h*w*d;
         surface = 2 * ( h * w + w * d + d * h );
-        System.out.println(surface + " and " +volumn);
+        volumn = h*w*d;
+
+        System.out.println(surface + " and " + volumn);
     }
 
 }
